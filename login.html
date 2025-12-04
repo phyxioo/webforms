@@ -3,16 +3,51 @@
 <head></head>
 <style>
 body {
-	 background: url('https://upload.wikimedia.org/wikipedia/commons/7/7b/08415jfBarangay_Santa_Elena_High_School_Shoe_Avenue_Marikina_Cityfvf_24.jpg');
-	 background-position: center;
+	 background: url('bg.png');
+	 background-position-y: -400px;
+	 background-position-x: center;
 	 background-repeat: no-repeat;
 	}
-img {
-	 align: center;
+h1 {
+	 margin: 10px auto 5px;
+     font-size: 40px;
+     color:white;
+     background: rgba(0, 55, 133, 0.75);
+     padding: 15px 40px;
+     border-radius: 30px;
+     box-shadow: 0 4px 12px rgba(1, 22, 54,0.5);
+	 text-align: center;
+	 width: 500px;
 	}
+label {
+	 margin: 10px auto 5px;
+     font-size: 30px;
+     color:white;
+     background: rgba(0, 55, 133, 0.75);
+     padding: 15px 40px;
+     border-radius: 30px;
+     box-shadow: 0 4px 12px rgba(1, 22, 54,0.5);
+	 text-align: center;
+	 width: 50px;
+	 height: 20px;
+	}
+input[type="text"] {
+      font-size: 40	px;
+      font-family: Arial, sans-serif;
+	  height: 50px;
+	  width: 500px;
+    }
 </style>
-<body>
-<img src="SEHS_LOGO.png">
-
+<body align="center">
+<img width="200" height="200" src="SEHS_LOGO.png">
+<h1>Sta. Elena High School</h1>
 </body>
+<form>
+<br><br><br><br><br>
+<label for="name">Name:</label>
+<input type="text" name="name" id="name" required>
+<br><br><br><br><br>
+<label for="pass">Password:</label>
+<input type="text" name="pass" id="pass" required>
+</form>
 </html>
