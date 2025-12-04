@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+<style>
+table, td, tr {
+	border-collapse:collapse;
+    border:2px solid black; 
+	cellspacing: 0px;
+	}
+body {
+	 background: url('bg.png');
+	 background-position-y: -400px;
+	 background-position-x: -1000px;
+	 background-repeat: no-repeat;
+	}
+h2 {
+	 margin: 10px auto 5px;
+     font-size: 30px;
+     color:white;
+     background: rgba(0, 55, 133, 0.75);
+     padding: 15px 40px;
+     border-radius: 30px;
+     box-shadow: 0 4px 12px rgba(1, 22, 54,0.5);
+	 text-align: center;
+	 width: 500px;
+</style>
+<body>
+  <h2>Register Form</h2>
+  <form>
+    <table cellpadding="5">
+      <tr>
+        <td rowspan="2">Name:</td>
+        <td><input type="text" style="width:240px;" name="surname" required></td>
+        <td><input type="text" style="width:240px;" name="firstname" required></td>
+		<td><input type="text" style="width:240px;" name="middlename" required></td>
+      </tr>
+      <tr>
+		<td align="center" colspan="3">&emsp;Surname
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;First Name 
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Middle Name </td>
+        
+      </tr>
+      <tr>
+        <td>Grade Level</td>
+        <td><input type="text" style="width:240px;" name="grade" required></td>
+        <td>Section</td>
+        <td><input type="text" style="width:240px;" name="section" required></td>
+      </tr>
+      <tr>
+        <td rowspan="3">Address</td>
+      </tr>
+      <tr>
+        <td colspan="3"><input type="text" name="address_no" required>
+		<input type="text" name="street" required>
+		<input type="text" name="barangay" required>
+		<input type="text" name="city" required></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+        No. 
+		&emsp;&emsp;&emsp;&emsp; Street
+		&emsp;&emsp;&emsp;&emsp; Barangay
+		&emsp;&emsp;&emsp;&emsp; City
+        </td>
+        
+      </tr>
+      <tr>
+        <td rowspan="2"><strong>Birthday</strong></td>
+		 <td colspan="2">
+          <select name="birth_month" required>
+            <option>January</option>
+            <option>February</option>
+			<option>March</option>
+			<option>April</option>
+			<option>May</option>
+			<option>June</option>
+			<option>July</option>
+			<option>August</option>
+			<option>September</option>
+			<option>October</option>
+			<option>November</option>
+			<option>December</option>
+          </select>
+		&emsp;&emsp;&emsp;&emsp;&emsp;
+          <select name="birth_date" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+			<option>14</option>
+			<option>15</option>
+			<option>17</option>
+			<option>18</option>
+			<option>19</option>
+			<option>20</option>
+			<option>21</option>
+			<option>22</option>
+            <option>23</option>
+			<option>24</option>
+			<option>25</option>
+			<option>26</option>
+			<option>27</option>
+			<option>28</option>
+			<option>29</option>
+			<option>30</option>
+            <option>31</option>
+          </select>
+		  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <select name="birth_year" required>
+			<option>2000</option>
+			<option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+			<option>2007</option>
+			<option>2008</option>
+			<option>2009</option>
+			<option>2010</option>
+			<option>2011</option>
+			<option>2012</option>
+			<option>2013</option>
+			<option>2014</option>
+			<option>2015</option>
+			<option>2016</option>
+			<option>2017</option>
+			<option>2018</option>
+			<option>2019</option>
+			<option>2020</option>
+			<option>2021</option>
+			<option>2022</option>
+			<option>2023</option>
+			<option>2024</option>
+			<option>2025</option>	
+          </select>
+		  </td>
+		  <td>
+		  <input type="text" name="age">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">Month 
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Date 
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Year
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Age</td>
+       
+      </tr>        
+        
+
+      <tr>
+        <td colspan="4">Contact No.
+        <input type="text" name="contact">
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        E-Mail Add.
+        <input type="email" name="email"></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td colspan="3">
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </td>
+      </tr>
+      <tr>
+        <td>Class Officer?</td>
+        <td colspan="3">
+          <input type="radio" name="class_officer" value="yes"> Yes
+          <input type="radio" name="class_officer" value="no"> No<br>
+          If yes,&emsp;Position: <input type="text" name="position">
+        </td>
+      </tr>
+      <tr>
+        <td>Other Club Memberships:</td>
+        <td colspan="3">
+          1. <input type="text" name="club1"><br>
+          2. <input type="text" name="club2">
+        </td>
+      </tr>
+      <tr>
+        <td>Computer Skills:</td>
+        <td colspan="3">
+          <input type="checkbox" name="skills" value="office"> Office Productivity<br>
+          <input type="checkbox" name="skills" value="photo"> Photo Editing<br>
+          <input type="checkbox" name="skills" value="web"> Web Designing<br>
+          <input type="checkbox" name="skills" value="hardware"> Computer Hardware Servicing<br>
+          <input type="checkbox" name="skills" value="graphics"> Graphics and Animation<br>
+          <input type="checkbox" name="skills" value="others"> Others: <input type="text" name="other_skills">
+        </td>
+      </tr>
+      <tr>
+        <td>Talents:</td>
+        <td colspan="3"><textarea name="talents" rows="2" cols="60" required></textarea></td>
+      </tr>
+      <tr>
+        <td>Why join this club?</td>
+        <td colspan="3"><textarea name="reason" rows="2" cols="60" required></textarea></td>
+      </tr>
+      <tr>
+        <td>What do you know about this club?</td>
+        <td colspan="3"><textarea name="knowledge" rows="2" cols="60" required></textarea></td>
+      </tr>
+      <tr>
+        <td>Expectations from this club:</td>
+        <td colspan="3"><textarea name="expectations" rows="2" cols="60" required></textarea></td>
+      </tr>
+      <tr>
+        <td>Contributions to this club:</td>
+        <td colspan="3"><textarea name="contribution" rows="2" cols="60" required></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="4" align="center">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+          <input type="button" value="Print" onclick="window.print()">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
