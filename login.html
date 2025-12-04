@@ -10,7 +10,7 @@ body {
 	}
 h1 {
 	 margin: 10px auto 5px;
-     font-size: 40px;
+     font-size: 30px;
      color:white;
      background: rgba(0, 55, 133, 0.75);
      padding: 15px 40px;
@@ -21,7 +21,7 @@ h1 {
 	}
 label {
 	 margin: 10px auto 5px;
-     font-size: 30px;
+     font-size: 20px;
      color:white;
      background: rgba(0, 55, 133, 0.75);
      padding: 15px 40px;
@@ -32,22 +32,50 @@ label {
 	 height: 20px;
 	}
 input[type="text"] {
-      font-size: 40	px;
+      font-size: 20	px;
       font-family: Arial, sans-serif;
-	  height: 50px;
-	  width: 500px;
+	  height: 45px;
+	  width: 400px;
     }
+input[type="submit"] {
+
+      font-family: Arial, sans-serif;
+	  height: 45px;
+	  width: 100px;
+    }
+a	{
+	 margin: 10px auto 5px;
+     font-size: 20px;
+     color:white;
+     background: rgba(0, 55, 133, 0.75);
+     padding: 15px 40px;
+	 border-radius: 10px;
+     box-shadow: 0 4px 12px rgba(1, 22, 54,0.5);
+	 text-align: center;
+	 height: 4px;
+	 width: 10px;
+	}
+p	{
+	 font-size: 20px;
+	}
 </style>
 <body align="center">
-<img width="200" height="200" src="SEHS_LOGO.png">
+<img width="100" height="100" src="SEHS_LOGO.png">
 <h1>Sta. Elena High School</h1>
-</body>
+
 <form>
-<br><br><br><br><br>
-<label for="name">Name:</label>
-<input type="text" name="name" id="name" required>
-<br><br><br><br><br>
-<label for="pass">Password:</label>
-<input type="text" name="pass" id="pass" required>
+<br><br><br>
+<label for="name">Name:</label><br>
+<input type="text" name="name" id="name">
+<br><br><br>
+<label for="pass">Password:</label><br>
+<input type="text" name="pass" id="pass">
+<br><br><br>
+<input type="submit" value="Submit">
+<br><br><br>
 </form>
+<p style="color:white;">Not yet a member?
+<br><br>
+<a href="">Register!</a>
+</body>
 </html>
